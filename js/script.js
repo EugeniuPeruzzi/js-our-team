@@ -48,3 +48,10 @@ let objs =[
     },
     
 ];
+
+for (let i = 0; i<objs.length; i++){
+    
+    let objsvar = objs[i]
+    
+    console.log(objsvar);
+}
