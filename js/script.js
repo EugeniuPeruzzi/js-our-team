@@ -49,9 +49,20 @@ let objs =[
     
 ];
 
+//stampo in c.log le informazionmi degli ogetti
 for (let i = 0; i<objs.length; i++){
     
     let objsvar = objs[i]
     
     console.log(objsvar);
-}
+
+    let display = document.querySelector('.display');
+    display.innerHTML += 
+    `<div class="name-display m-4">
+        <div class="img-conainer w-100">
+            <img src="" alt="${objsvar.immage}">
+        </div>
+        <h2>${objsvar.name}</h2>
+        <span>${objsvar.role}</span>
+    </div>`
+};
